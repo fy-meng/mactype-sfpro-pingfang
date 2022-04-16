@@ -18,7 +18,7 @@ Replace system font with SF Pro Text and PingFang SC, the system fonts of macOS.
 Note: `SFPFSCProText` is chosen as the system font replacement to achieve a better viewing experience for smaller font sizes at the cost of slightly worse large fonts.
 
 ### SystemLink Registry
-Set the CJK font fallback order to `Simplified Chinese -> Traditional Chinese -> Japanese -> Korean` without need to change the locale.
+Run `SystemLink.reg` to set the CJK font fallback order to `Simplified Chinese -> Traditional Chinese -> Japanese -> Korean` without changing the locale.
 
 ## Showcases
 
@@ -38,7 +38,7 @@ Set the CJK font fallback order to `Simplified Chinese -> Traditional Chinese ->
 ## Known Issues
 
 - Some applications such as Discord, if set to launch on startup, its rendering will not be altered by MacType. Currently I'm disabling launch on startup for those applications;
-- Even handled by MacType, Discord doesn't seem to be using PingFang for Simplified Chinese, but at least there's no SimSun or Meiryo in the mix and I'm happy with the experience for now.;
+- Even handled by MacType, Discord doesn't seem to be using PingFang for Simplified Chinese, but at least there's no SimSun or Meiryo in the mix and I'm happy with the experience for now;
 - In browesers such as Firefox, if set the default font to SFPFSC, it will not rendering in SFPFSC, but rather fallback everything to Traditional Chinese. It's probably due to some errors when I merge the font, but I cannot figure out the problem at the moment.
 
 Solutions or workaround for these issues is welcomed!
