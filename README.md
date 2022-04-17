@@ -37,6 +37,7 @@ Run `SystemLink.reg` to set the CJK font fallback order to `Simplified Chinese -
 
 ## Known Issues
 
+- After enabling MacType's font substitution, Window's font fallback won't work anymore. This causes some glyphs such as characters from other languages to be rendered as squares. The [solution](https://github.com/snowie2000/mactype/issues/576) is to use FontLink in the registry rather than font substitution but currently I could not get it to work;
 - Some applications such as Discord, if set to launch on startup, its rendering will not be altered by MacType. Currently I'm disabling launch on startup for those applications;
 - Even handled by MacType, Discord doesn't seem to be using PingFang for Simplified Chinese, but at least there's no SimSun or Meiryo in the mix and I'm happy with the experience for now;
 - In browesers such as Firefox, if set the default font to SFPFSC, it will not rendering in SFPFSC, but rather fallback everything to Traditional Chinese. It's probably due to some errors when I merge the font, but I cannot figure out the problem at the moment.
@@ -45,6 +46,4 @@ Solutions or workaround for these issues is welcomed!
 
 ## TODO
 
-Instead of merging the fonts, figure out a way to use FontLink fallback to have a more natural way of font replacement that won't get in the way of MacType. 
-
-Alternatively, merge even more fonts (PingFang TC, PingFang HK, Hiragino Mincho) into San Fancisco to manually simulate fallback, but the font will be much less flexible to use probably.
+Instead of merging the fonts, figure out a way to use FontLink fallback to have a more natural way of font replacement. This should also allow for the inclusion of PingFang TC, PingFang HK, Hiragino Sans, etc. to have more consistent CJK font.
